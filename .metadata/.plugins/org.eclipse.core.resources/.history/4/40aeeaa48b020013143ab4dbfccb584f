@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<my-order total-price="29.0" total="100.0"><reference>hello</reference><client-data><address>Bangalore</address><name>Pranshi Dhingra</name></client-data><items-list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" _quantity="1" _unit-price="29.0" xsi:type="java:com.bean.Item"><_reference>ITEM_CODE-209</_reference><_description>Bread</_description></items-list></my-order>

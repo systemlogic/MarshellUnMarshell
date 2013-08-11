@@ -1,3 +1,0 @@
-#Tomcat publish data
-#Sun Aug 11 22:27:18 IST 2013
-org.eclipse.jst.j2ee.server\:systemlogic=/media/Harsh/springSTS/springsource/vfabric-tc-server-developer-2.9.2.RELEASE/base-instance/wtpwebapps/systemlogic

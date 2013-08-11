@@ -1,8 +1,0 @@
-<div align="left" >
-<ul>
-  <table align="left" >
-  	<tr><td><a href='/spring/springCoreContainerMenu'><span>Core and Beans</span></a></td></tr>
-  	<tr><td><a href='/spring/antclassPathNProperty'><span>Context</span></a></td></tr>
-  	<tr><td><a href='/spring/antJarNScp'><span>Expression Language</span></a></td></tr>
-  </table>
-</ul>

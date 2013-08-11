@@ -1,4 +1,0 @@
-mysql.driver=com.mysql.jdbc.Driver
-mysql.url=
-mysql.user=
-mysql.password=

@@ -1,9 +1,0 @@
-package com;
-
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-public class Hello {
-	ApplicationContext acx = new ClassPathXmlApplicationContext(new String[] {"hello.xml"});
-	
-}

@@ -1,1 +1,0 @@
-com.cloudbees.sdk.plugins:service-plugin:1.2.2
