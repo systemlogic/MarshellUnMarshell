@@ -1,0 +1,1 @@
+org.cloudbees.sdk.plugins:config-plugin:1.3.2

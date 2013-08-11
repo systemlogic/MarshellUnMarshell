@@ -1,0 +1,28 @@
+<html>
+<head>
+<link href="/menu_assets/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<%@ include file="Header.jsp"%>
+	<%@ include file="Menu.jsp"%>
+	<table>
+		<tr>
+			<td valign="top" height="10px" width="222"><%@ include
+					file="springExampleMenu.jsp"%></td>
+			<td></td>
+			<td align="left" bordercolor="c41200">
+				<h2>Web REST/Data Access</h2>
+				<p>This example is implemented using REST webservice using spring and Data 
+				integration using jdbc. Method that are exposed are as follows</P>
+				<table>
+					<tr><th>path</th><th>Request Type</th><th>Description</th></tr>
+					<tbody><tr><td>/dept</td><td>GET</td>Get all department<td></td></tr></tbody>
+				</table>
+		</td>
+				<%@ include file="rightPane.jsp" %>
+		</tr>
+	</table>
+	<%@ include file="FooterLink.jsp"%>
+	<%@ include file="Footer.jsp"%>
+</body>
+</html>

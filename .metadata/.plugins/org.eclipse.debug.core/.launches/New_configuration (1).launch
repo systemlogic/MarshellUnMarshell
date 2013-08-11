@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.cloudbees.eclipse.run.core.launchconfiguration.launchConfigurationType">
+<stringAttribute key="com.cloudbees.eclipse.run.core.debugPort" value="18335"/>
+<stringAttribute key="com.cloudbees.eclipse.run.core.port" value="8335"/>
+<booleanAttribute key="org.eclipse.jdt.launching.ALLOW_TERMINATE" value="true"/>
+<booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="true"/>
+</launchConfiguration>

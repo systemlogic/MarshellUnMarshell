@@ -1,0 +1,20 @@
+package com;
+
+import java.io.FileReader;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.oxm.Marshaller;
+import org.springframework.oxm.Unmarshaller;
+
+public class App {
+
+	@Autowired
+	private Marshaller marshell;
+	
+	@Autowired
+	private Unmarshaller unmarshell;
+	public static void main(String...str){
+		Marshaller ma;
+		ma.marshal(Company.class,  new FileReader("person.xml"));
+	}
+}

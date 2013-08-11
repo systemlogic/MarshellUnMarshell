@@ -1,0 +1,13 @@
+package com;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+public class Hello {
+	public static void main(String...str){
+		 ApplicationContext appContext = new FileSystemXmlApplicationContext(
+			        "target/classes/META-INF/hello.xml");
+		helloBean hb = (helloBean)appContext.getBean("helloBean" );
+		System.out.println(hb.getHello());
+	}
+}

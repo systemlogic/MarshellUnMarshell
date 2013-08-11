@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+/media/Harsh/springSTS/springsource/workspace-sts-3.3.0.RELEASE/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1810978629.index
+3643633466.index
+1686520512.index
+1359410789.index
+3802613578.index
