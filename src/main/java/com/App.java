@@ -58,7 +58,7 @@ public class App {
     public static void main(String[] args) throws IOException {
         ApplicationContext appContext =
             new ClassPathXmlApplicationContext("services.xml");
-        App application = (App) appContext.getBean("XMLConverter");
+        App application = (App) appContext.getBean("XML");
         application.settings.setTotal(100);
         application.settings.setReference("hello");
         ClientData client = new ClientData();
@@ -76,9 +76,11 @@ public class App {
         item._description = "Milk";
         item._quantity = 2 ;
         item._reference = "ITEM_CODE-293";
-        item._unitPrice = 36;
+        item._unitPrice = 16;
         items.add(item);
         application.settings.setItemsList(items);
+        application.settings.getTotal();
+        System.out.println(application.settings.getTotalPrice());
         application.saveSettings();
         MyOrder order = application.loadSettings();
         System.out.println(order.getTotal());

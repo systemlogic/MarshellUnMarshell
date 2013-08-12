@@ -7,7 +7,7 @@
 
 	<!-- services -->
 
-	<bean id="XMLConverter" class="com.App">
+	<bean id="XML" class="com.App">
 		<property name="marshaller" ref="castorMarshaller" />
 		<property name="unmarshaller" ref="castorMarshaller" />
 	</bean>
