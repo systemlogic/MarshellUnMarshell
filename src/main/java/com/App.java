@@ -17,7 +17,7 @@ import com.bean.ClientData;
 import com.bean.Item;
 import com.bean.MyOrder;
 public class App {
-	private static final String FILE_NAME = "order.xml";
+	private static final String FILE_NAME = "out/order.xml";
     private MyOrder settings = new MyOrder();
     public MyOrder getSettings() {
 		return settings;

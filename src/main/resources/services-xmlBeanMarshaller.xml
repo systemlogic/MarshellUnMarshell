@@ -5,12 +5,7 @@
 	http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<!-- services -->
-
-	<bean id="XML" class="com.App">
-		<property name="marshaller" ref="castorMarshaller" />
-		<property name="unmarshaller" ref="castorMarshaller" />
-	</bean>
-	<bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller" />
-
+<!-- 	<oxm:xmlbeans-marshaller id="xmlBean"/> -->
+	
+	<bean id="xmlBean2" class="org.springframework.oxm.xmlbeans.XmlBeansMarshaller"></bean>
 </beans>
