@@ -19,7 +19,15 @@ import com.bean.MyOrder;
 public class App {
 	private static final String FILE_NAME = "order.xml";
     private MyOrder settings = new MyOrder();
-    private Marshaller marshaller;
+    public MyOrder getSettings() {
+		return settings;
+	}
+
+	public void setSettings(MyOrder settings) {
+		this.settings = settings;
+	}
+
+	private Marshaller marshaller;
     private Unmarshaller unmarshaller;
 
     public void setMarshaller(Marshaller marshaller) {
@@ -53,36 +61,5 @@ public class App {
                 is.close();
             }
         }
-    }
-
-    public static void main(String[] args) throws IOException {
-        ApplicationContext appContext =
-            new ClassPathXmlApplicationContext("services.xml");
-        App application = (App) appContext.getBean("XML");
-        application.settings.setTotal(100);
-        application.settings.setReference("hello");
-        ClientData client = new ClientData();
-        client.setName("Pranshi Dhingra");
-        client.setAddress("Bangalore");
-        application.settings.setClientData(client);
-        Vector<Item> items = new Vector<Item>();
-        Item item = new Item();
-        item._description = "Bread";
-        item._quantity = 1 ;
-        item._reference = "ITEM_CODE-209";
-        item._unitPrice = 29;
-        items.add(item);
-        item = new Item();
-        item._description = "Milk";
-        item._quantity = 2 ;
-        item._reference = "ITEM_CODE-293";
-        item._unitPrice = 16;
-        items.add(item);
-        application.settings.setItemsList(items);
-        application.settings.getTotal();
-        System.out.println(application.settings.getTotalPrice());
-        application.saveSettings();
-        MyOrder order = application.loadSettings();
-        System.out.println(order.getTotal());
     }
 }
